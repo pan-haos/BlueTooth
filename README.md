@@ -32,7 +32,7 @@ Java虚拟机的运行时数据区
 
 那么栈帧又是什么呢？每伴随着一个方法被调用，jvm就会创建一个栈帧，并且压入虚拟机栈，伴随着方法调用结束，该栈帧就会出栈，并且被销毁。也就是说一个栈帧的声明周期就是它对应的方法的执行周期。一个线程的调用方法链可能很长，很多方法都同时出于执行状态，因此在活动的线程中，只有位于栈顶的栈帧才是有效的。
 
-![虚拟机栈图](http://img.blog.csdn.net/20170925120931424?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcGFuODYxMTkwMDc5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![虚拟机栈图](https://user-gold-cdn.xitu.io/2017/9/22/dc9ec811c1969025c147bbfc3fd845dc?imageView2/0/w/1280/h/960)
 我们知道栈帧的生命周期就是对应的java方法执行的周期，所以栈帧需要存储方法执行时的一些数据。栈帧中存放的数据包括：局部变量表，操作数栈，动态连接和返回地址等。
 
  局部变量表
